@@ -1,0 +1,478 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --dark: #3c3a50;
+    --medium-dark: #23262f;
+    --darkest: #191c23;
+    --purple: #991eef;
+    --magenta: #fd2dd8;
+    --light-magenta: #f583ff;
+    --light-blue: #8babfa;
+    --main-shadow: 0px 0px 25px -7px rgb(187, 185, 185);
+}
+
+*{
+    text-decoration: none;
+}
+
+body{
+    background: #23262f;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+main{
+    min-height: calc(100vh - (5rem + 15rem));
+}
+
+.navbar{
+    height: 5rem;
+    padding: 0 60px;
+    margin-bottom: 8rem;
+}
+
+.nav-links{
+    animation: linksAnimation .8s linear;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes linksAnimation {
+    from{
+        transform: translateY(-100%);
+        visibility: visible;
+    }
+    to{
+        transform: translateY(0%);
+        visibility: visible;
+    }
+}
+
+.nav-link{
+    padding: .7rem 1.3rem;
+    transition: all 0.4s ease;
+}
+
+a.nav-link:hover{
+    background: #191c23;
+    border-radius: 8px;
+    color: var(--light-magenta);
+}
+
+.menu-btn{
+    display: none;
+    cursor: pointer;
+}
+
+.logo{
+    animation: logoAnimation .8s linear;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.single-proof{
+    background: var(--medium-dark);
+    border-radius: 15px;
+}
+
+.proofs-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.proofImg{
+    margin-bottom: 2rem;
+    border-radius: inherit;
+}
+
+.proofImg img{
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.proof-texts{
+    padding: 1rem 2.2rem;
+}
+
+.proof-header{
+    margin-bottom: 1.3rem;
+}
+
+@keyframes logoAnimation {
+    from{
+        transform: translateY(-100%);
+        visibility: visible;
+    }
+    to{
+        transform: translateY(0%);
+        visibility: visible;
+    }
+}
+
+footer{
+    background: var(--darkest);
+    height: 15rem;
+}
+
+.dq{
+    margin-bottom: 6rem;
+}
+
+h1{
+    /* font-size: 50px; */
+    font-size: clamp(20px, 30px, 35px);
+}
+
+h2{
+    font-size: clamp(1.7rem, 4vw + .5rem, 3.5rem);
+    /* font-size: 45px; */
+}
+
+h3{
+    font-size: 40px;
+}
+
+h4{
+    font-size: 35px;
+}
+
+h5{
+    font-size: 30px;
+}
+
+h6{
+    font-size: 25px;
+}
+
+.page-head-text{
+    animation: logoAnimation .7s linear;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logoAnimation {
+    from{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    to{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+.nums{
+    background: linear-gradient(240deg, #991eef, #fd2dd8);
+    font-size: 45px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.num-overlay{
+    background-color: var(--darkest);
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.section-bg{
+    background: var(--darkest);
+    padding: 4rem 0;
+}
+
+.center-quality-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quality-icon{
+    background: linear-gradient(100deg, #991eef, #fd2dd8);
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    transform: rotate(2deg);
+    padding: 6px;
+    box-shadow: 0px 0px 30px #23262f;
+}
+
+.rotated-overlay{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background: var(--darkest);
+}
+
+.seeMyProjects{
+    color: white;
+}
+
+.seeMyProjects a{
+    text-decoration: none;
+}
+
+.seeMyProjects a:hover{
+    color: white;
+}
+
+.myBtn{
+    padding: .7rem 1.2rem;
+    background: linear-gradient(100deg, #991eef, #fd2dd8);
+    border-radius: 8px;
+    color: white;
+    border: none;
+    outline: none;
+    width: max-content;
+    transition: all 0.2s linear;
+    font-size: 15px;
+}
+
+.myBtn:hover{
+    padding: 1rem 2rem;
+}
+
+.myBtnLg{
+    padding: 1rem 7rem;
+    background: linear-gradient(100deg, #991eef, #fd2dd8);
+    border-radius: 8px;
+    color: white;
+    border: none;
+    outline: none;
+    width: max-content;
+    transition: all 0.2s linear;
+    font-size: 15px;
+}
+
+.myBtnLg:hover{
+    padding: 1.3rem 7.3rem;
+}
+
+.shootBtn{
+    margin: 0 auto;
+}
+
+.makeItHappen{
+    margin-bottom: 6rem;
+}
+
+.mySelf-section{
+    height: 65vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 55% 45%;
+    margin-bottom: 15rem;
+}
+
+@media screen and (min-width:1100px) {
+    .mySelf-section{
+        margin-bottom: 6rem;
+    }
+}
+
+.mySelf-sectionTexts{
+    padding: 0 2rem;
+}
+
+.mySelf-sectionImg{
+    padding: 0 1rem;
+}
+
+.mySelf-sectionTexts h2{
+    
+}
+
+.myImageBorder{
+    margin: 0 auto;
+}
+
+.myImage{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.otherHeadSection{
+    background: var(--darkest);
+}
+
+.otherHeadSectionOverlay{
+    padding: 2rem 0;
+}
+
+.gotAQuestion{
+    margin-bottom: 5rem;
+}
+
+form{
+    display: grid;
+    gap: 5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-row{
+    gap: 5rem;
+}
+
+.form-col{
+    width: 100%;
+}
+
+.form-label{
+    font-size: 15px;
+}
+
+input, textarea{
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1.5px solid white;
+    padding: 10px 0;
+    font-size: 17px;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-links{
+    border-radius: 50px;
+    background: var(--dark);
+    width: 400px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.footer-links a:hover{
+    color: var(--light-magenta);
+}
+
+@media screen and (max-width:850px) {
+    .navbar{
+        padding: 20px;
+        margin-bottom: 4rem;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        transition: all .5s ease;
+        transform: translateX(100%);
+        flex-direction: column;
+        padding: 2rem;
+        height: 100vh;
+        background: var(--medium-dark);
+        z-index: 1;
+        animation: none;
+        visibility: visible;
+    }
+    .nav-link{
+        display: block;
+        line-height: 4;
+    }
+    .nav-active{
+        transform: translateX(0%);
+    }
+    .change-order{
+        order: 2;
+    }
+    .mySelf-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .proofs-row{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .remove-pad{
+        padding: 0;
+    }
+    .center-number{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mySelf-section{
+        grid-template-columns: 1fr;
+        margin-bottom: 16rem;
+    }
+    .mySelf-sectionTexts{
+        padding: 1rem;
+    }
+    .mySelf-sectionTexts h4{
+        font-size: 13pt;
+    }
+    .mySelf-sectionImg{
+        padding: 5rem 0rem;
+    }
+    .myImage{
+        height: 170px;
+        width: 170px;
+    }
+
+    /* h2, h3, h4, h5, h6 {
+        font-size: 13pt;
+        margin-bottom: 1rem;
+    } */
+
+    .page-head-text{
+        padding: 1rem;
+    }
+
+    .seeMyProjects{
+        font-size: 14px;
+    }
+    .myBtn, .makeItHappen a{
+        width: 100%;
+    }
+    .myBtnLg{
+        padding: .7rem 2rem;
+        width: 100%;
+    }
+    .form-row{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    form{
+        gap: 3rem;
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-links{
+        width: 100%;
+        padding: 0 20px;
+    }
+    h4.proof-header{
+        font-size: 18pt;
+    }
+    .proofs-row{
+        grid-template-columns: 1fr;
+    }
+    .proof-texts{
+        padding: 0 1rem;
+    }
+}
+
