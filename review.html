@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habeebade | Freelance Graphic Designer and Web Developer</title>
+    <!------- MY CSS ------->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/clash-grotesk.css">
+
+
+    <!------- FONTAWESOME LINK ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/assets/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <!------- AOS ANIMATION LINK ------->
+    <link rel="stylesheet" href="aos-by-red.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/image/favicon.svg" type="assets/image/x-icon" />
+</head>
+<body>
+    
+    
+    
+
+    <section class="contact-section">
+        <div class="container even-column">
+            
+            <div class="contact-form">
+                <h3 class="text-fw-semi-bold text-grey-dark fs-550 mb-half" data-aos="fade-down">Take 1 minute to share</h3>
+                <p class="text-fw-semi-bold text-grey-semi-dark mb-1 fs-500" data-aos="fade-up">
+                    You can help by sharing a brief testimonial of the experience you had working with Adekunle Habeeb, <br> thanks.
+                </p>
+                <form action="https://formspree.io/f/xdojdgrk" method="POST">
+                    <div class="form-group" data-aos="fade-up">
+                        <label for="name" class="text-grey-dark">Your Name</label>
+                        <input type="text" name="name" id="name" placeholder="e:g Juliet Edward" required>
+                    </div>
+                    <div class="form-group" data-aos="fade-up">
+                        <label for="email" class="text-grey-dark">Your Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="form-group" data-aos="fade-up">
+                        <label for="name" class="text-grey-dark">Your Testimonial</label>
+                        <textarea name="message" id="message" rows="1" placeholder="For me, Habeeb is really understanding, he listened to all my explanations and applied all, I highly recommend him......" required></textarea>
+                    </div>
+                    <div class="form-group main-center" data-aos="fade-up">
+                        <button type="submit" class="main-btn">Shoot &nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="text-fw-semi-bold text-grey-semi-dark mb-1 text-center">Adekunle Habeeb Portfolio | Created in 2023</p>
+        </div>
+    </footer>
+    
+    <button class="scrollupBtn main-center" onclick="topFunction()"
+        id="myBtn" title="Go to top">
+        <i class="fas fa-arrow-up-long"></i>
+    </button>
+
+
+    <!-- Main JS -->
+    <script src="assets/javascript/app.js"></script>
+
+    <!-- AOS ANIMATION -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 400,
+        once: true,
+      });
+    </script>
+    
+</body>
+</html>
